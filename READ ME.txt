@@ -1,0 +1,10 @@
+
+Persiapan :
+
+install library
+
+1.Buka CMD
+2.pip install kivy
+3.pip install ffpyplayer
+4.pip install moviepy
+

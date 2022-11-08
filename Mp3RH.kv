@@ -1,0 +1,27 @@
+MyLayout
+
+<MyLayout>:
+    id: my_widget
+    orientation: 'vertical'
+
+    VideoPlayer:
+        id: my_video
+        source : ''
+
+    FileChooserIconView:
+        id: filechooser
+        size_hint: 1, .15
+        on_selection: my_widget.selected(filechooser.selection)
+
+    BoxLayout:
+        size_hint: 1, .10
+        padding: 10
+        spacing: 100
+        Button :
+            size_hint: .18, 1
+            text: "Convert"
+            on_press: my_widget.run_threading()
+        ProgressBar:
+            id: show_process
+            max: 100
+        
